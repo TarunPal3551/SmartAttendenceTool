@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorRipple_for_day_date_elements">  <item>
+        <shape android:shape="rectangle">
+
+            <!-- solid background -->
+            <solid android:color="#BA68C8" />
+            <!-- border-->
+            <stroke
+                android:color="#7B1FA2"
+                android:width="1dp"
+                />
+            <!-- //#AB47BC    #d9d9d9 /-->
+            <corners android:radius="10dp" />
+            <!-- different corners with different radius-->
+            <!--corners
+                android:bottomLeftRadius="5dp"
+                android:topLeftRadius="10dp"
+                android:topRightRadius="15dp"
+                android:bottomRightRadius="20dp"
+                /-->
+        </shape>
+    </item>
+</ripple>

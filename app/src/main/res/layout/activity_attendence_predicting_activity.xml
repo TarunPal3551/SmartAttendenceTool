@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context="com.example.android.testin3.attendence_analyse_activity">
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation_predecting_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom"
+        app:itemBackground="@color/predict"
+        app:menu="@menu/bottom_menu">
+
+
+    </android.support.design.widget.BottomNavigationView>
+    <!--
+       <com.github.mikephil.charting.charts.PieChart
+           android:id="@+id/for_subjects"
+           android:layout_width="200dp"
+           android:layout_height="200dp">
+
+       </com.github.mikephil.charting.charts.PieChart>
+     -->
+
+
+    <!--<TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:text="Attendence Analysis"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />-->
+
+    <!--    <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:elevation="5dp"
+            >-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/top_toolbar_2"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#3d51b4"
+            android:orientation="vertical"
+            android:elevation="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:text="Bunk Helper"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:padding="10dp"
+
+                >
+            </TextView>
+
+            <ImageView
+
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/up_arrow"
+
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/up_arrow_3"
+                />
+
+
+        </RelativeLayout>
+
+
+        <!--       android:background="#fe5722"-->
+
+        <LinearLayout
+            android:id="@+id/expandable_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:elevation="6dp"
+            android:layout_below="@id/top_toolbar"
+            android:background="@drawable/blue_abstract_2"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Use this Bunk Helper or Attendance  predicter\nto predict your attendence in future,so as to\nknow whether that bunking classes will affect\nyour attendance progress ,in a manner you\nwant or not. "
+                android:textSize="16dp"
+                android:textColor="#ffffff"
+                android:padding="6dp"
+                >
+            </TextView>
+            <!-- <TextView
+                 android:layout_height="55dp"
+                 android:layout_width="match_parent"
+                 android:background="@drawable/orange_abstract"
+                 android:text="CANCEL"
+                 android:textSize="20dp"
+                 android:textStyle="bold"
+                 android:textColor="#ffffff"
+
+                 />-->
+
+
+
+        </LinearLayout>
+        <!--  </LinearLayout>-->
+
+
+        <!--   <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_below="@id/expandable_2"
+               >-->
+
+        <ScrollView
+            android:id="@+id/scrollView_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button"
+                    app:cardCornerRadius="7dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:elevation="8dp"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        >
+
+                        <TextView
+                            android:padding="4dp"
+                            android:id="@+id/totalattendence"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/blue_abstract_2"
+                            android:gravity="center"
+                            android:textSize="18dp"
+
+                            android:textColor="#ffffff"
+                            android:text="Use current progress recorded in the app to predict Attendence in future (make sure your attendence of today in Tracker is marked as holiday/deactivated or all classes are marked as dissmised in Attendance  tracker)."
+
+                            >
+                        </TextView>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/button"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:elevation="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/cv_bt_2"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="7dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingRight="8dp"
+                            android:paddingLeft="8dp"
+
+                            >
+
+
+                            <EditText
+
+                                android:background="@drawable/edit_text_design_3"
+                                android:id="@+id/ed_per"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:padding="6dp"
+                                android:inputType="number"
+                                android:imeOptions="actionNext"
+                                android:textCursorDrawable="@drawable/color_cursor_2"
+                                android:layout_marginTop="10dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="no of periods per day"
+                                android:textSize="14dp"
+                                android:background="#ffffff"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#000000"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+
+                                />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            >
+
+
+                            <EditText
+
+                                android:background="@drawable/edit_text_design_3"
+                                android:id="@+id/ed_atten"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:padding="6dp"
+                                android:inputType="number"
+                                android:imeOptions="actionNext"
+                                android:textCursorDrawable="@drawable/color_cursor_2"
+                                android:layout_marginTop="10dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="total classes occured (till yesterday)"
+                                android:textSize="14dp"
+                                android:background="#ffffff"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#000000"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+
+                                />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+
+                            >
+
+
+                            <EditText
+
+                                android:background="@drawable/edit_text_design_3"
+                                android:id="@+id/ed_presen"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:padding="6dp"
+                                android:inputType="number"
+                                android:imeOptions="actionNext"
+                                android:textCursorDrawable="@drawable/color_cursor_2"
+                                android:layout_marginTop="10dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="total classes  marked as present(till yesterday)"
+                                android:textSize="14dp"
+                                android:background="#ffffff"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#000000"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+
+                                />
+
+
+                        </RelativeLayout>
+
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:id="@+id/piechartsubtv"
+                            android:layout_height="70dp"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/blue_abstract_2"
+                            android:text="use new set of data from to predict the attendence in future"
+                            android:gravity="center"
+                            android:textSize="18dp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="5dp"
+
+                            >
+                        </TextView>
+
+
+
+
+
+
+
+
+                        <!--<Button
+                            android:id="@+id/button2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="144dp"
+                            android:text="use new set of data from to predict the attendence in future"
+                            />-->
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+
+            </LinearLayout></ScrollView></LinearLayout></RelativeLayout>

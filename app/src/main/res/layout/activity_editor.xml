@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.testin3.EditorActivity">
+
+ <!--   <RelativeLayout
+
+        android:id="@+id/Rel_layout_xml_for_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+
+        android:layout_alignParentTop="true"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="8dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp"
+
+        app:cardBackgroundColor="#9C27B0"
+
+        >
+
+
+
+    <RelativeLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        >
+        <android.support.v7.widget.CardView
+            android:layout_width="260dp"
+            android:layout_height="38dp"
+            android:layout_centerHorizontal="true"
+
+
+            app:cardCornerRadius="4dp"
+            app:cardElevation="8dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+
+            android:clickable="true"
+            android:foreground="@drawable/custom_bg"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rel_lay_container_for_tv_and_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+             >
+
+            <TextView
+                android:id="@+id/week_no_xml"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_centerHorizontal="true"
+
+                android:padding="6dp"
+
+
+
+                >
+
+            </TextView>
+
+
+                <ImageView
+
+                    android:id="@+id/circle_iv_of_top_bar"
+                    android:layout_width="8.5dp"
+                    android:layout_height="8.5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+<LinearLayout
+    android:id="@+id/this_aint_container_just_color_changing_backgrnd_for_prev"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+
+    android:layout_marginLeft="7dp"
+
+    android:background="@drawable/green_circle_for_top_bar_and_prev_next_buttons"
+    android:orientation="horizontal"
+    >
+
+</LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/previous_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+android:src="@drawable/prev"
+        />
+
+        <LinearLayout
+            android:id="@+id/this_aint_container_just_color_changing_backgrnd_for_next"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:layout_marginRight="7dp"
+
+            android:background="@drawable/green_circle_for_top_bar_and_prev_next_buttons"
+            android:orientation="horizontal"
+            >
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/next_button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:layout_marginRight="7dp"
+
+            android:src="@drawable/next"
+
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+<!--    </RelativeLayout>-->
+
+  <!--  <TextView
+        android:id="@+id/previous_button"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:hint="previous"
+        android:textSize="30dp"
+        android:background="@android:color/holo_red_dark"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:id="@+id/next_button"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+
+        android:background="@android:color/holo_red_dark"
+        android:hint="next"
+        android:textSize="30dp" />-->
+
+
+
+
+
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:menu="@menu/bottom_menu"
+        android:id="@+id/bottom_navigation_editor_activity"
+        app:itemBackground="@color/editoractivity">
+
+    </android.support.design.widget.BottomNavigationView>
+
+
+<FrameLayout
+    android:id="@+id/layout_for_transculrnt_frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="470dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="50dp">
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+
+    >
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="115dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="8dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp"
+        android:layout_marginRight="8dp"
+        >
+                <LinearLayout
+
+                    android:id="@+id/Lin_layout_xml_for_blue-boreder_purpose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/horizontalScrollView"
+                        >
+                <LinearLayout
+
+                    android:id="@+id/Lin_layout2_xml"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    android:padding="4dp"
+
+                    android:animateLayoutChanges="true">
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+    <TextView
+        android:id="@+id/testing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="8dp"
+        android:layout_marginBottom="5dp"
+        >
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_5_xml"
+        android:layout_width="93dp"
+        android:layout_height="438dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+
+        android:animateLayoutChanges="true"
+        >
+
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/container_for_present_day_indicator_elements"
+        android:layout_width="15dp"
+        android:layout_height="438dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="101dp"
+        android:orientation="vertical"
+        android:padding="4dp"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/mon_indicater"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+
+
+            android:layout_marginTop="28dp"
+            android:orientation="horizontal"
+
+
+            >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tue_indicater"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+
+
+            android:layout_marginTop="54dp"
+            android:orientation="horizontal"
+
+
+            >
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wed_indicater"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+
+
+                android:layout_marginTop="55dp"
+                android:orientation="horizontal"
+
+
+                >
+            </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/thu_indicater"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+
+
+                    android:layout_marginTop="56dp"
+                    android:orientation="horizontal"
+
+
+                    >
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fri_indicater"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+
+
+                        android:layout_marginTop="56dp"
+                        android:orientation="horizontal"
+
+
+                        >
+                    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/sat_indicater"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+
+
+            android:layout_marginTop="56dp"
+            android:orientation="horizontal"
+
+
+            >
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/sun_indicater"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+
+
+            android:layout_marginTop="56dp"
+            android:orientation="horizontal"
+
+
+            >
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
+
+</FrameLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="frame_lauout_ID" type="id">9876</item>
+    <item name="tv_for_graying_frame_lay" type="id" />
+</resources>

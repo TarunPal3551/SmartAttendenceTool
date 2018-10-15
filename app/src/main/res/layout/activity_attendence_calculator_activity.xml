@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context="com.example.android.testin3.attendence_analyse_activity">
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:menu="@menu/bottom_menu"
+        android:id="@+id/bottom_navigation_analyse_activity"
+       app:itemBackground="@color/analyse"
+        >
+
+    </android.support.design.widget.BottomNavigationView>
+    <!--
+       <com.github.mikephil.charting.charts.PieChart
+           android:id="@+id/for_subjects"
+           android:layout_width="200dp"
+           android:layout_height="200dp">
+
+       </com.github.mikephil.charting.charts.PieChart>
+     -->
+
+
+    <!--<TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:text="Attendence Analysis"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />-->
+
+<!--    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:elevation="5dp"
+        >-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+    <RelativeLayout
+        android:id="@+id/top_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#fe5722"
+        android:orientation="vertical"
+        android:elevation="5dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+
+
+        >
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:text="Attendance Analyser"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+          android:padding="10dp"
+
+            >
+        </TextView>
+        <ImageView
+
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/up_arrow_2"
+
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/up_arrow_2"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <!--       android:background="#fe5722"-->
+
+    <LinearLayout
+        android:id="@+id/expandable_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:elevation="6dp"
+android:layout_below="@id/top_toolbar"
+        android:background="@drawable/orange_abstract"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="To analyse ever aspect of your attendance ,so\nas to know which subject needs more  \nattention or attendance. Or find out which \nperiod of the day you are missing the most so \nthat you can work upon it.Or.....just see for\nyourself.  "
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:padding="6dp"
+            >
+        </TextView>
+       <!-- <TextView
+            android:layout_height="55dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/orange_abstract"
+            android:text="CANCEL"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+
+            />-->
+
+
+
+    </LinearLayout>
+  <!--  </LinearLayout>-->
+
+
+ <!--   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/expandable_2"
+        >-->
+
+    <ScrollView
+android:id="@+id/scrollView_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+    <!--<TextView
+        android:layout_height="55dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/orange_abstract"
+        android:text="CANCEL"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+
+        />-->
+
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/container_of_attendance_tv"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/totalattendence"
+            android:layout_height="75dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/orange_abstract"
+android:gravity="center"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+
+            >
+        </TextView>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/container_of_pirChartSubject"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@android:color/white">
+                   <com.github.mikephil.charting.charts.PieChart
+                       android:id="@+id/piechartsubjectwise"
+                       android:layout_width="match_parent"
+                       android:layout_height="200dp"
+                       android:background="@android:color/white"
+                     >
+
+                   </com.github.mikephil.charting.charts.PieChart>
+
+        </LinearLayout>
+        <TextView
+           android:padding="10dp"
+            android:id="@+id/piechartsubtv"
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/orange_abstract"
+            android:text="CANCEL"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+
+            >
+    </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_of_pirChartWeek"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@android:color/white">
+                   <com.github.mikephil.charting.charts.PieChart
+                       android:id="@+id/piechartweekdaywise"
+                       android:layout_width="match_parent"
+                       android:layout_height="200dp"
+                       android:layout_below="@id/piechartsubjectwise"
+                       android:background="@android:color/white"
+                     >
+
+                   </com.github.mikephil.charting.charts.PieChart>
+        </LinearLayout>
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/piechartweektv"
+            android:layout_height="55dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/orange_abstract"
+            android:text="CANCEL"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+
+            >
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/container_of_pirChartPeriod"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:elevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@android:color/white">
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechartperiodwise"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/piechartweekdaywise"
+
+
+            android:background="@android:color/white">
+
+        </com.github.mikephil.charting.charts.PieChart>
+        </LinearLayout>
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/piechartpertv"
+            android:layout_height="55dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/orange_abstract"
+            android:text="CANCEL"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+
+            >
+        </TextView>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/container_of_linrchartimeline"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#ffffff">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/linechart2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+
+        android:background="@drawable/orange_abstract"
+        >
+
+
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+
+            android:text="Attendance timeline (week wise)"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+
+
+            >
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="X-axis : Week no of the year"
+            android:textSize="9dp"
+            android:paddingLeft="30dp"
+            android:textColor="#ffffff"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Y-axis : attendence percentage TILL that week "
+            android:textSize="9dp"
+            android:paddingLeft="30dp"
+            android:textColor="#ffffff"
+            />
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/container_of_linrchartweek"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#ffffff"
+        android:layout_marginBottom="60dp">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/Linechart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+
+            android:background="@drawable/orange_abstract"
+            >
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+
+                android:text="Attendance of each week "
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+
+
+                >
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="X-axis : Week no of the year"
+                android:textSize="9dp"
+                android:paddingLeft="30dp"
+                android:textColor="#ffffff"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Y-axis : attendence percentage of THAT week"                android:textSize="9dp"
+                android:paddingLeft="30dp"
+                android:textColor="#ffffff"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
+
+
+
+    </RelativeLayout>

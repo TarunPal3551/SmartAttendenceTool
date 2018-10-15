@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Select the subject for this period "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_for_check_sub"
+        android:layout_below="@id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+    </ScrollView>
+
+        <requestFocus />
+
+
+<Button
+    android:id="@+id/ok_xml"
+    android:text="OK"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+
+
+    />
+    <Button
+        android:id="@+id/CANCEL_xml"
+        android:layout_toLeftOf="@id/ok_xml"
+        android:text="CANCEL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+
+
+
+        />
+</RelativeLayout>

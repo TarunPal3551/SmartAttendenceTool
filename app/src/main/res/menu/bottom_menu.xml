@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Tracker"
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_action_home"
+        android:iconTint="#7B1FA2"
+        />
+    <item android:icon="@drawable/ic_action_analyes"
+        android:id="@+id/menu_analyse"
+        android:title="Analyser"
+        android:iconTint="#E64A19"
+        />
+    <item
+        android:id="@+id/attendencepredecting"
+        android:icon="@drawable/ic_predict"
+        android:title="Bunk Helper"
+        android:iconTint="#303F9F">
+
+    </item>
+    <item
+        android:id="@+id/attendencewebview"
+        android:icon="@drawable/legit_bookmark"
+        android:title="Web Portal"
+        android:iconTint="#388E3C">
+
+    </item>
+    <item android:icon="@drawable/ic_action_setting"
+        android:id="@+id/menu_setting"
+        android:title="Settings"
+        android:iconTint="#FFA000"
+
+        />
+
+</menu>

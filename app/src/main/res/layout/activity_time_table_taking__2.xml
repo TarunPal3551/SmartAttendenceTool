@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.testin3.time_table_taking_Activity_2">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="add the corresponding subject
+         to the corresponding period"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/save_xml"
+        android:text="SAVE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <Button
+    android:id="@+id/SKIP__xml"
+    android:text="SKIP"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_alignParentTop="true"
+
+    />
+
+    <Button
+    android:id="@+id/edit_SUBJECTS_LIST"
+    android:text="EDIT_SUBJECTS_LIST"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+
+
+    />
+
+
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="90dp"
+        android:id="@+id/horizontalScrollView">
+        <LinearLayout
+
+            android:id="@+id/Lin_layout2_xml"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/testing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ll_5_xml"
+        android:layout_width="80dp"
+        android:layout_height="445dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:id="@+id/ll_7_xml"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/date_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/day_1"
+                android:text="Monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_8_xml"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/date_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/day_2"
+                android:text="Tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_9_xml"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/date_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/day_3"
+                android:text="Wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_10_xml"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/date_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/day_4"
+                android:text="Thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:id="@+id/ll_11_xml"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/date_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/day_5"
+                android:text="Friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_12_xml"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/date_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/day_6"
+                android:text="Saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_13_xml"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/date_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/day_7"
+                android:text="Sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <FrameLayout
+        android:id="@+id/framelayout_for_background_of_another_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+</FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/view_for_frame_layout_to_expand"
+        android:layout_width="230dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"></FrameLayout>
+
+</RelativeLayout>
+

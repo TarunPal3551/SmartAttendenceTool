@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DO YOU WANT TO ADD YOUR TIMETABLE "
+        android:textSize="33dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time table is not neccesaary to add AND you can also add the timetable later  "
+        android:textSize="22dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/add_timetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add  timetable"/>
+
+
+        <Button
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="skip now" />
+
+    </LinearLayout>
+</LinearLayout>

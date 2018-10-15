@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/top_toolbar_4"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#FF9800"
+        android:orientation="vertical"
+        android:elevation="5dp"
+
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="Settings"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            >
+        </TextView>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation_setting_activity"
+        android:layout_below="@id/top_toolbar_4"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:id="@+id/msms"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@android:color/white">
+
+            <RelativeLayout
+                android:id="@+id/seprator"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/rel1"
+                android:background="#cdc9c9">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp">
+
+
+                <CheckBox
+                    android:id="@+id/tracker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/predicter"
+                    android:layout_below="@+id/predicter"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/settingActivity"
+                    android:text="Attendence Tracker"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/predicter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="15dp"
+                    android:buttonTint="@color/settingActivity"
+                    android:checked="false"
+                    android:text="Bunk Helper"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/chooseactivitytextview"
+                    android:layout_width="138dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Choose Activity"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/Web_portal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tracker"
+                    android:layout_below="@+id/tracker"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/settingActivity"
+                    android:checked="false"
+                    android:text="Web Portal"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageViewhelp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignTop="@+id/chooseactivitytextview"
+                    android:layout_marginTop="2dp"
+                    android:layout_toEndOf="@+id/chooseactivitytextview"
+                    app:srcCompat="@drawable/ic_action_help" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/seprator">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    app:srcCompat="@drawable/updatetimetable" />
+
+
+                <TextView
+                    android:id="@+id/updatetimetabletextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="86dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Update TimeTable"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewupdateinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/updatetimetabletextview"
+                    android:layout_below="@+id/updatetimetabletextview"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Click to change or edit you timetable for upcoming weeks"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/seprator2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cdc9c9"
+                android:layout_below="@+id/rel2"
+                >
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/seprator2">
+
+                <TextView
+                    android:id="@+id/cachetextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="86dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Clear Cache"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/cachetextview"
+                    android:layout_below="@+id/cachetextview"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Click to clear cache of your web portal" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/clear_cache" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seprator3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rel3"
+                android:background="#cdc9c9">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seprator3">
+
+                <TextView
+                    android:id="@+id/clearcachetextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="86dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="4"
+                    android:text="Clear App Data"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/clearcachetextview"
+                    android:layout_below="@+id/clearcachetextview"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Click to clear all app data" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/clearappdata" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seprator4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rel4"
+                android:background="#cdc9c9"
+                >
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seprator4">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="89dp"
+                    android:text="Contact us"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/contactus" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seprator5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rel5"
+                android:background="#cdc9c9">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seprator5">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="89dp"
+                    android:text="Rate us"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/rateus" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seprator6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rel6"
+                android:background="#cdc9c9">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seprator6">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="89dp"
+                    android:text="Invite a Friend"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/sharetofriends" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seprator7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rel7"
+                android:layout_marginBottom="50dp"
+                android:background="#cdc9c9">
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation_setting_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:itemBackground="@color/settingActivity"
+        app:menu="@menu/bottom_menu">
+
+
+    </android.support.design.widget.BottomNavigationView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the names for all subjects : "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/butt_add_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add one subject"/>
+
+        <Button
+        android:id="@+id/butt_remove_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="remove one subject"/>
+    </LinearLayout>
+
+♣
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="310dp">
+
+
+    <LinearLayout
+        android:id="@+id/LL_IN_XML_TO_expand"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/butt_OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ok done"/>
+
+
+
+
+</LinearLayout>

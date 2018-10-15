@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="welcome to the PRESENT App"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        android:textStyle="italic"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="please enter the number of periods you have per day"
+        android:textSize="22dp"
+        android:layout_marginTop="22dp"/>
+
+
+    <EditText
+        android:id="@+id/ed_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="number of periods each day"
+        android:textSize="22dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        />
+
+
+    <Button
+        android:id="@+id/b1_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:textSize="22dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tv2_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tv3_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        />
+
+
+    <Button
+        android:id="@+id/butto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="99dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/holo_blue_light">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="check the days falls on non working days"
+                android:textSize="20dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="7dp"
+                android:background="@android:color/darker_gray"
+                />
+            <CheckBox
+                android:id="@+id/cb_xml_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monday"
+                android:textSize="15dp"/>
+            <CheckBox
+                android:id="@+id/cb_xml_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tuesday"
+                android:textSize="15dp"/>
+            <CheckBox
+                android:id="@+id/cb_xml_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wednesday"
+                android:textSize="15dp"/>
+            <CheckBox
+                android:id="@+id/cb_xml_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thursday"
+                android:textSize="15dp"/>
+            <CheckBox
+                android:id="@+id/cb_xml_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Friday"
+                android:textSize="15dp"/>
+            <CheckBox
+                android:id="@+id/cb_xml_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saturday"
+                android:textSize="15dp"/>
+            <CheckBox
+                android:id="@+id/cb_xml_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textSize="15dp"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
